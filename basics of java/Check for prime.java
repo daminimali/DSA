@@ -1,4 +1,4 @@
-Example 1:
+/* Example 1:
 Input:
  N = 3
 Output:
@@ -24,6 +24,7 @@ Approach:
 -And then checking if the number is divisible by the numbers from 2 to the number less than a given number
 -Then, If the remainder is zero, that means it is divisible and hence not a prime number.
 -If the loop runs till square root and none of the numbers divided it completely. So it is the Prime number.
+*/
 
 class Solution {
 
@@ -47,7 +48,7 @@ class Solution {
     }
   }
 }
-Output: Prime Number
+/* Output: Prime Number
 Time Complexity: O(n)
 Space Complexity: O(1)
 
@@ -62,6 +63,7 @@ Approach:
 -And then checking if the number is divisible by the numbers from 2 to its square root.
 -Then, If the remainder is zero, that means it is divisible and hence not a prime number.
 -If the loop runs till square root and none of the numbers divided it completely. So it is the Prime number.
+*/
 
 class Solution {
 
@@ -85,6 +87,7 @@ class Solution {
     }
   }
 }
-Output: Prime Number
+/* Output: Prime Number
 Time Complexity: O(√n)
 Space Complexity: O(1)
+*/
