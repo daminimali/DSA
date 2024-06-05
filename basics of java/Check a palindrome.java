@@ -1,4 +1,4 @@
-Problem Statement:  Given a number check if it is a palindrome.
+/* Problem Statement:  Given a number check if it is a palindrome.
 
 An integer is considered a palindrome when it reads the same backward as forward.
 
@@ -24,9 +24,7 @@ Say the input number is X. Declare a variable Y to store the reverse and initial
 -We will append this last digit, d to Y using a formula 10*Y+d.
 -The last digit of X has been used. Discard it using X/10. 
 -Repeat these steps for the remaining digits. After every iteration, the size of X will shrink by one digit. Terminate the iteration when X = 0 meaning no new digits are left to be reversed.
-
-The reversed number Y is compared with the dummy variable since X was destroyed while iteration. If Y equals dummy print “Palindrome Number” otherwise “Not Palindrome Number”.
-
+The reversed number Y is compared with the dummy variable since X was destroyed while iteration. If Y equals dummy print “Palindrome Number” otherwise “Not Palindrome Number”.*/
 public class Main {
    static int reverse(int X) {
       int Y = 0;
@@ -55,6 +53,6 @@ public class Main {
    }
 }  
 
-Time Complexity: O(logN) for reversing N digits of input integer.
+/*Time Complexity: O(logN) for reversing N digits of input integer.
 
-Space Complexity: O(1)
+Space Complexity: O(1) */
