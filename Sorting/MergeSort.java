@@ -1,4 +1,4 @@
-Problem:  Given an array of size n, sort the array using Merge Sort.
+/* Problem:  Given an array of size n, sort the array using Merge Sort.
 
 Examples:
 
@@ -46,8 +46,8 @@ Now we will take two pointers left and right, where left starts from low and rig
 Using a while loop( while(left <= mid && right <= high)), we will select two elements, one from each half, and will consider the smallest one among the two. Then, we will insert the smallest element in the temp array.
 After that, the left-out elements in both halves will be copied as it is into the temp array.
 Now, we will just transfer the elements of the temp array to the range low to high in the original array.
+*/
 
-Code:
 import java.util.*;
 
 class Solution {
@@ -114,6 +114,7 @@ public class tUf {
     }
 
 }
+/*
 Output:
 
 Before Sorting Array:
@@ -130,3 +131,4 @@ Space complexity: O(n)
 Reason: We are using a temporary array to store elements in sorted order.
 
 Auxiliary Space Complexity: O(n)
+*/
