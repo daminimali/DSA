@@ -1,3 +1,4 @@
+/*
 Print Name N times using Recursion
 
 Prerequisite: The learner must know how to write a simple function in any language with parameters.
@@ -25,6 +26,7 @@ main()
 We can clearly see in this pseudocode that we first call the function when the value of i is 1 and then print the name and increment i by 1 inside the parameter of the function and make a call again. But, we know that this will go on forever as i will be increasing continuously after every function call. So, to avoid this we put a base condition that if i exceeds n, then simply terminate the current recursive call and return to the previous call.
 
 In this way, the text that we want to print would be printed n times and as soon as we exceed the count of printing by n, the function terminates.
+*/
 
 class Recursion {
     
@@ -45,6 +47,7 @@ class Recursion {
        func(1,n);
     }
 }
+/*
 Output:
 Raj
 Raj
@@ -53,4 +56,4 @@ Raj
 
 Time Complexity: O(N) { Since the function is being called n times, and for each function, we have only one printable line that takes O(1) time, so the cumulative time complexity would be O(N) }
 Space Complexity: O(N) { In the worst case, the recursion stack space would be full with all the function calls waiting to get completed and that would make it an O(N) recursion stack space }.
-
+*/
