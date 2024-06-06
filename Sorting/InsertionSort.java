@@ -1,4 +1,5 @@
-Problem Statement: Given an array of N integers, write a program to implement the Insertion sorting algorithm.
+/*
+    Problem Statement: Given an array of N integers, write a program to implement the Insertion sorting algorithm.
 
 Examples:
 
@@ -47,8 +48,8 @@ The selected element at index i=4 is 20. Now, we will try to move leftwards and 
 Outer loop iteration 6(selected index i = 5):
 
 The selected element at index i=5 is 9. Now, we will try to move leftwards and put 9 in its correct position. Here, the correct position for 9 will be index 0. So, we need to swap adjacent elements until 9 reaches index 0. Now, the whole array is sorted.
+*/
 
-Code:
 import java.util.*;
 
 public class Main {
@@ -81,6 +82,7 @@ public class Main {
     }
 
 }  
+/*
 Output:
 
 Before insertion sort:
@@ -96,3 +98,4 @@ Space Complexity: O(1)
 Best Case Time Complexity: 
 
 The best case occurs if the given array is already sorted. And if the given array is already sorted, the outer loop will only run and the inner loop will run for 0 times. So, our overall time complexity in the best case will boil down to O(N), where N = size of the array.
+*/
