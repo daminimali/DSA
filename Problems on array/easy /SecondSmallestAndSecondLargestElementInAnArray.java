@@ -1,4 +1,4 @@
-**Problem Statement: Given an array, find the second smallest and second largest element in the array. Print ‘-1’ in the event that either of them doesn’t exist.
+/* *Problem Statement: Given an array, find the second smallest and second largest element in the array. Print ‘-1’ in the event that either of them doesn’t exist.
 
 **Examples**
 Example 1:
@@ -29,8 +29,7 @@ Approach:
 Sort the array in ascending order
 The element present at the second index is the second smallest element
 The element present at the second index from the end is the second largest element
-
-Code:
+*/
 
 import java.io.*;
 import java.util.Arrays;
@@ -58,7 +57,7 @@ public static void main(String[] args)
 	getElements(arr, n);
 }
 }
-
+/*
 Output:
 
 Second smallest is 2
@@ -80,8 +79,7 @@ Find the smallest and largest element in the array in a single traversal
 After this, we once again traverse the array and find an element that is just greater than the smallest element we just found.
 Similarly, we would find the largest element which is just smaller than the largest element we just found
 Indeed, this is our second smallest and second largest element.
-
-Code:
+*/
 import java.io.*;
 import java.util.Arrays;
 class Test
@@ -128,7 +126,7 @@ public static void main(String[] args)
 }
 }
 
-
+/*
 Output:
 
 Second smallest is 2
@@ -160,8 +158,8 @@ If the current element is larger than ‘large’ then update second_large and l
 Else if the current element is larger than ‘second_large’ then we update the variable second_large.
 Once we traverse the entire array, we would find the second largest element in the variable second_large.
 Here’s a quick demonstration of the same.
+*/
 
-Code:
 import java.io.*;
 class Test
 {
@@ -223,7 +221,7 @@ public static void main(String[] args)
 
 }
 
-
+/*
 Output:
 
 Second smallest is 2
@@ -233,3 +231,4 @@ Complexity Analysis
 Time Complexity: O(N), Single-pass solution
 
 Space Complexity: O(1)
+*/
