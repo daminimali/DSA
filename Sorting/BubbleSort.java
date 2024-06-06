@@ -1,4 +1,4 @@
-Problem Statement: Given an array of N integers, write a program to implement the Bubble Sorting algorithm.
+/* Problem Statement: Given an array of N integers, write a program to implement the Bubble Sorting algorithm.
 
 Examples:
 
@@ -25,8 +25,8 @@ Basically, we will swap adjacent elements(if arr[j] > arr[j+1]) until the maximu
 Thus, after each iteration, the last part of the array will become sorted. Like: after the first iteration, the array up to the last index will be sorted, and after the second iteration, the array up to the second last index will be sorted, and so on.
 After (n-1) iteration, the whole array will be sorted.
 Note: Here, after each iteration, the array becomes sorted up to the last index of the range. That is why the last index of the range decreases by 1 after each iteration. This decrement is achieved by the outer loop and the last index is represented by variable i in the following code. And the inner loop(i.e. j) helps to push the maximum element of range [0….i] to the last index(i.e. index i).
+*/
 
-Code:
 import java.util.*;
 
 public class tUf {
@@ -59,6 +59,7 @@ public class tUf {
     }
 
 }
+/*
 Output:
 
 Before Using Bubble Sort:
@@ -77,8 +78,8 @@ The best case occurs if the given array is already sorted. We can reduce the tim
 
 We will check in the first iteration if any swap is taking place. If the array is already sorted no swap will occur and we will break out from the loops. 
 Thus the iteration of the outer loop will be just 1. And our overall time complexity will be O(N).
+*/
 
-Code:
 import java.util.*;
 
 public class tUf {
@@ -117,6 +118,7 @@ public class tUf {
     }
 
 }
+/*
 Output: 
 
 Before Using Bubble Sort:
@@ -130,3 +132,4 @@ After Using bubble sort:
 Time Complexity: O(N2) for the worst and average cases and O(N) for the best case. Here, N = size of the array.
 
 Space Complexity: O(1)
+*/
