@@ -1,4 +1,4 @@
-**Brute Force Approach**
+/* Brute Force Approach
 Algorithm / Intuition
 Solution 1: Brute force
 
@@ -8,7 +8,7 @@ Approach:
 -Traverse from 1 to min(a,b).
 -And check if i is divisible by both a and b.If yes store it in the answer.
 -Find the maximum value of i which divides both a and b.
-
+*/
 public class Main {
   public static void main(String args[]) {
     int num1 = 3, num2 = 6;
@@ -21,6 +21,7 @@ public class Main {
     System.out.print("The GCD of the two number is "+ans);
   }
 }
+/*
 Output: The GCD of the two numbers is 4
 
 Time Complexity: O(N).
@@ -37,6 +38,7 @@ gcd(a,b)=gcd(b,a%b)
 Approach:
 -Recursively call gcd(b,a%b) function till the base condition is hit.
 -b==0 is the base condition.When base condition is hit return a,as gcd(a,0) is equal to a.
+*/
 
 public class Main {
   static int gcd(int a, int b) {
@@ -51,7 +53,9 @@ public class Main {
     System.out.print("The GCD of the two numbers is "+ans);
   }
 }
+/*
 Output: The GCD of the two numbers is 4
 
 Time Complexity: O(logɸmin(a,b)), where ɸ is 1.61.
 Space Complexity: O(1).
+*/
