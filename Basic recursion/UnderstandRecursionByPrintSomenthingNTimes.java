@@ -1,4 +1,4 @@
-*What is Recursion?
+/*What is Recursion?
 It is a phenomenon when a function calls itself indefinitely until a specified condition is fulfilled.
 
 *What is Stack Overflow in Recursion?
@@ -28,8 +28,8 @@ main()
 
 }
 According to this pseudocode, the function will increment and print the value of count and then return when the base condition becomes true i.e, it will only print 0,1,2 and 3 and then execution gets completed.
-
 Recursive code for printing numbers from 0 to 3 : 
+*/
 class Recursion {
     static int cnt = 0;
     static void print(){
@@ -47,6 +47,7 @@ class Recursion {
         print();
     }
 }
+/*
 Output: 
 0
 1
@@ -62,3 +63,4 @@ What is Recursion
 Base Condition
 Stack Overflow / Stack Space
 Recursion Tree
+*/
