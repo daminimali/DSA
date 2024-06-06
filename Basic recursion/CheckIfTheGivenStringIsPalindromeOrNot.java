@@ -1,4 +1,5 @@
-Problem Statement: "Given a string, check if the string is palindrome or not."  A string is said to be palindrome if the reverse of the string is the same as the string.
+/*
+  Problem Statement: "Given a string, check if the string is palindrome or not."  A string is said to be palindrome if the reverse of the string is the same as the string.
 
 Examples:
 
@@ -23,8 +24,7 @@ And check if the first and last elements of the string are equal. And then move 
 Here we are achieving this with the help of ‘i’ which moves with them for a loop. First element can be get by str[i] and last element by str[str.length() - i - 1]). If this condition gets executed then it is not palindrome and returns false.
 
 If the loop ends after traversing elements till half of the length then, it is Palindrome and returns false.
-
-Code:
+*/
 import java.io.*;
 import java.util.Arrays;
 class Test {
@@ -57,6 +57,7 @@ class Test {
     }
   }
 }
+/*
 Output: Palindrome
 
 Time Complexity:  O(N)
@@ -70,8 +71,8 @@ If they’re the same then we simply call recursion for the next elements (start
 If at any point the start and the end differ, we return false stating that the string is not a palindrome.
 Otherwise, if the base condition is reached, then the string is obviously a palindrome and we return true.
 Let us understand it through a recursive code:
+*/
 
-Code:
 Java
 class Recursion {
     
@@ -97,6 +98,7 @@ class Recursion {
        System.out.println(palindrome(0,s));
     }
 }
+/*
 Output:
 
 True
@@ -104,3 +106,4 @@ True
 Time Complexity: O(N) { Precisely, O(N/2) as we compare the elements N/2 times and swap them}.
 
 Space Complexity: O(1) { The elements of the given array are swapped in place so no extra space is required}.
+*/
