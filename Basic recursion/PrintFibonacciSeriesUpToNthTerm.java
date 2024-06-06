@@ -1,4 +1,4 @@
-Problem Statement: Given an integer N. Print the Fibonacci series up to the Nth term.
+/*Problem Statement: Given an integer N. Print the Fibonacci series up to the Nth term.
 
 Examples:
 
@@ -24,8 +24,7 @@ Approach:
 Take an array say fib of size n+1.The 0th term and 1st term are 0 and 1 respectively.So fib(0)=0 and fib(1)=1.
 Now iterate from 2 to n and calculate fib(n).fib(n)=fib(n-1) + fib(n-2).
 Then print fib(0) + fib(1) + …………fib(n).
-
-Code:
+*/
 public class TUF {
   public static void main(String args[]) {
     int n = 5;
@@ -45,6 +44,7 @@ public class TUF {
     }
   }
 }
+/*
 Output:
 
 The Fibonacci Series up to 5th term:
@@ -63,8 +63,8 @@ Intuition: For calculating the ith term we only need the last and second last te
 Take two variables last and secondLast for storing (i-1)th and (i-2)th term.
 Now iterate from 2 to n and calculate the ith term. ith term is last + secondLast term.
 Then update secondLast term to the last term and the last term to ith term as we iterate.
+*/
 
-Code:
 public class TUF {
   public static void main(String args[]) {
     int n = 5;
@@ -86,6 +86,7 @@ public class TUF {
     }
   }
 }
+/*
 Output:
 
 The Fibonacci Series up to 5th term:
@@ -115,8 +116,8 @@ Approach:
 Similar to all the recursion problems we’ve seen before, we need a base case in this problem too in order for recursion to not go infinitely. Here, we notice that the Fibonacci series start from N = 1, where we initialize its value as 1. 
 Assume Fibonacci(0) = 0. So, Fibonacci(2) = 1+0 = 1 as the Nth Fibonacci number is the sum of the previous two Fibonacci numbers.
 Similarly, we call Fibonacci(N-1) and Fibonacci(N-2) and return their sum. Both the function calls Fibonacci(N-1) and Fibonacci(N-2) would be computed individually one by one until the base condition is reached for both and then they return back to the main function.
+*/
 
-Code:
 class Recursion {
     
     static int fibonacci(int N){
@@ -143,6 +144,8 @@ class Recursion {
        System.out.println(fibonacci(N));
     }
 }
-Time Complexity: O(2^N) { This problem involves two function calls for each iteration which further expands to 4 function calls and so on which makes worst-case time complexity to be exponential in nature }.
+/*
+  Time Complexity: O(2^N) { This problem involves two function calls for each iteration which further expands to 4 function calls and so on which makes worst-case time complexity to be exponential in nature }.
 
 Space Complexity: O(N) { At maximum there could be N function calls waiting in the recursion stack since we need to calculate the Nth Fibonacci number for which we also need to calculate (N-1) Fibonacci numbers before it }.
+*/
