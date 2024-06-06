@@ -1,4 +1,5 @@
-Problem Statement:  Given an array of n integers, sort the array using the Quicksort method.
+/*
+    Problem Statement:  Given an array of n integers, sort the array using the Quicksort method.
 
 Examples:
 
@@ -66,8 +67,8 @@ Here, we need to add some checks like i <= high-1 and j >= low+1. Because it mig
 Once we find such elements i.e. arr[i] > pivot and arr[j] < pivot, and i < j, we will swap arr[i] and arr[j].
 We will continue step 3 and step 4, until j becomes smaller than i.
 Finally, we will swap the pivot element(i.e. arr[low]) with arr[j] and will return the index j i.e. the partition index.
+*/
 
-Code:
 import java.util.*;
 
 class Solution {
@@ -129,6 +130,7 @@ public class tUf {
     }
 
 } 
+/*
 Output:
 Before Using quick Sort:
 4 6 2 5 7 9 1 3
@@ -161,3 +163,4 @@ F(n) = 2F(n/2)
 Time Complexity for the best and average case: O(N*logN)
 
 Space Complexity: O(1) + O(N) auxiliary stack space.
+*/
