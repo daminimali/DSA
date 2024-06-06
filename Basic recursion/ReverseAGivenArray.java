@@ -1,3 +1,4 @@
+/*
 Problem Statement: You are given an array. The task is to reverse the array and print it. 
 
 Examples:
@@ -17,6 +18,7 @@ Disclaimer: Don't jump directly to the solution, try it out yourself first.
 **Solution 1: Using an extra array.
 
 Approach: Declare an array,ans[] of the same size as the input array. Iterate from the back of the input array while storing the elements in ans[]  in opposite direction.
+*/
 
 public class Main {
    //Function to print array
@@ -40,6 +42,7 @@ public class Main {
       reverseArray(arr, n);
    }
 }
+/*
 Output:
 
 The reversed array is:-
@@ -57,7 +60,7 @@ Keep a pointer p1  at the first index and another p2 at the last index of the ar
 Swap the elements pointed by p1 and p2, Post swapping increment p1 and decrement p2.
 This process is repeated for only the first n/2 elements where n is the length of array.
 Note: Swapping all the n elements instead of n/2 elements leaves the array unaltered.
-
+*/
 public class Main {
    //Function to print array
    static void printArray(int arr[], int n) {
@@ -85,6 +88,7 @@ public class Main {
 
    }
 }  
+/*
 Output:
 
 The reversed array is:-
@@ -102,9 +106,8 @@ Create a function that takes an array, start index, and end index of the array a
 Swap the elements present  at the start and end index, 
 The portion of the array left to be reversed is arr[start+1,end-1]. Make a recursive call to reverse the rest of the array. While calling recursion pass start +1  and ends - 1 as parameters for the shrunk array. Repeat step 2.
 Continue recursion as long as the ‘start < end’ condition is satisfied. This is the base case for our recursion.
+*/
 
-Code:
-Java
 public class Main {
    //Function to print array
    static void printArray(int arr[], int n) {
@@ -129,7 +132,7 @@ public class Main {
       printArray(arr, n);
    }
 }
- 
+/*
 Output:
 
 The reversed array is:-
@@ -160,9 +163,8 @@ Note:
 Since this method expects an object as a parameter we have to convert the array into a list object using asList().
 Java collections require wrapper classes instead of primitive data types. In order to reverse an integer array use Integer instead of int.
 Syntax: Collections.reverse(class_obj); 
+*/
 
-Code:
-Java
 import java.util.*;
 public class Main {
    //Function to print array
@@ -185,6 +187,7 @@ public class Main {
       printArray(arr, n);
    }
 }
+/*
 Output:
 
 The reversed array is:-
@@ -193,3 +196,4 @@ The reversed array is:-
 Time Complexity: O(n)
 
 Space Complexity: O(1)
+*/
