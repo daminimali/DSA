@@ -1,4 +1,4 @@
-Problem: Print from N to 1 using Recursion
+/*Problem: Print from N to 1 using Recursion
 
 Since in this problem, there is no global variable that can be decremented each time we call a function, how can we keep a track of the number of integers being printed on the output screen?
 
@@ -19,7 +19,7 @@ main()
 We can clearly see in this pseudocode that we first call the function when the value of i is n and then print the value of i and decrement i by 1 inside the parameter of the function and make a call again. But, we know that this will go on forever as i will be decreasing continuously after every function call. So, to avoid this we put a base condition that if i is less than 1, then simply terminate the current recursive call and return to the previous call.
 
 In this way, all the integers from N to 1 would get printed and as soon as the count becomes less than 1, the function terminates.
-
+*/
 class Recursion {
     
     static void func(int i, int n){
@@ -39,6 +39,7 @@ class Recursion {
        func(n,n);
     }
 }
+/*
 Output 
 
 4
@@ -72,4 +73,4 @@ main()
 We can clearly see in this pseudocode that we first call the function when the value of i is N and then make a call again inside this function for printing (n-1) integers and after this, we print N. But, we know that this will go on forever as i will be decreasing continuously after every function call. So, to avoid this we put a base condition that if i is less than n, then simply terminate the current recursive call and return to the previous call.
 
 In this way, all the integers from 1 to N would get printed and as soon as i becomes less than n, the function call terminates.
-
+*/
