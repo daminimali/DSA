@@ -1,4 +1,4 @@
-Problem Statement: Given a number X,  print its factorial.
+/* Problem Statement: Given a number X,  print its factorial.
 
 To obtain the factorial of a number, it has to be multiplied by all the whole numbers preceding it. More precisely X! = X*(X-1)*(X-2) … 1.
 
@@ -23,8 +23,8 @@ Disclaimer: Don't jump directly to the solution, try it out yourself first.
 Approach:
 
 Since the factorial of X  will be the product of the number itself and all its preceding numbers we can run loop i, from 1 to X. In every iteration current i, is multiplied with the product so far.  
+*/
 
-Code:
 public class Main {
    static int factorial(int X) {
       int ans = 1;
@@ -40,6 +40,7 @@ public class Main {
       System.out.println("The factorial of " + X + " is " + result);
    }
 }   
+/*
 Output: The factorial of 5 is 120
 
 Time Complexity: O(n)
@@ -74,3 +75,4 @@ main()
    factorial(n);
 
 }
+*/
