@@ -1,4 +1,4 @@
-Examples:
+/* Examples:
 
 Example 1:
 Input: N = 123
@@ -40,27 +40,43 @@ Initialize a variable reverse = 0;
 now in each step take the remainder of the given number N and store it as a variable digit, digit = N % 10
 Also, Divide the number by 10. N= N / 10
 in each step, the variable reverse get updated as reverse = reverse*10+digit.
-Code:
+*/
+import java.util.Scanner;
 
-[tabby title="C Program "]
-
-#include<stdio.h>
-
-int main()
-{
-    int N = 123;
-    int num = N;
-    int reverse = 0;
-    while(N!=0)
-    {
-        int digit = N%10;
-        reverse = reverse*10+digit;
-        N = N/10;
+public class Main {
+    public static void main(String[] args) {
+        // Declare a variable 'n' to
+        // store the input integer.
+        int n;
+        // Prompt the user to enter an
+        // integer and store it in 'n'.
+        Scanner scanner = new Scanner(System.in);
+        n = scanner.nextInt();
+        // Initialize a variable 'revNum' to
+        // store the reverse of the input integer.
+        int revNum = 0;
+        // Start a while loop to reverse the
+        // digits of the input integer.
+        while(n > 0){
+            // Extract the last digit of
+            // 'n' and store it in 'ld'.
+            int ld = n % 10;
+            // Multiply the current reverse number
+            // by 10 and add the last digit.
+            revNum = (revNum * 10) + ld;
+            // Remove the last digit from 'n'.
+            n = n / 10;
+        }
+        // Print the reversed number.
+        System.out.println(revNum);
     }
-    printf("The reverse of the %d is %d",num,reverse);
 }
-Output: The reverse of the 123 is 321
+/*
+OutputInput Number: 7789
+
+Output Number: 9877
 
 Time Complexity: O(n), where n is the length of the given number
 
 Space Complexity: O(1)
+*/
