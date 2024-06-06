@@ -1,4 +1,4 @@
-Example 1:
+/* Example 1:
 Input:
  n = 36
 Output:
@@ -22,6 +22,8 @@ Approach:
 -This is the basic approach. As we know the possible candidates, we iterate upon all the candidates and check whether they divide the actual number.
 -If it divides, then it is one of the divisors. Therfore, we print it.
 -If it does not divide, then it is not a divisor. We do this for all the candidates.
+*/
+
 import java.util.*;
 
 public class Solution{
@@ -43,6 +45,7 @@ public class Solution{
 	
 }
 
+/*
 Output:
 The Divisors of 36 are:
 1 2 3 4 6 9 12 18 36
@@ -61,6 +64,7 @@ Approach:
 -By keeping these in mind, it is enough if we traverse up to the root of a number. Whenever we find a divisor, we print it and also print the quotient. If the quotient is the same, we ignore it. Because the root of a perfect square will give the same quotient as itself.
 -The quotients are the numbers that are on the other side of the root. So, it's okay if we stop traversing at the root.
 -This approach is more time efficient than the previous one. But the output sequences are not the same. In the previous approach, we get an ordered output unlike here.
+*/
 
 import java.util.*;
 
@@ -85,9 +89,11 @@ public class Solution{
 	}
 	
 }
+/*
 Output:
 The Divisors of 36 are:
 1 36 2 18 3 12 4 9 6
 
 Time Complexity: O(sqrt(n)), because every time the loop runs only sqrt(n) times.
 Space Complexity: O(1), we are not using any extra space.
+*/
