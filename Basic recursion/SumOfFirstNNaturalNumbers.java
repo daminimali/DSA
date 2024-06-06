@@ -1,4 +1,5 @@
-Problem statement: Given a number ‘N’, find out the sum of the first N natural numbers.
+/*
+  Problem statement: Given a number ‘N’, find out the sum of the first N natural numbers.
 
 Examples:
 
@@ -27,7 +28,8 @@ We can use a for loop or while loop to achieve the goal.
 Take a variable sum and initialize it as 0.
 Take a for loop and run from 1 to N.
 Save the result in sum.
-Code:
+*/
+
 import java.util.*;
 
 public class tuf {
@@ -45,6 +47,7 @@ public class tuf {
     System.out.println("The sum of the first " + n + " numbers is: " + sum);
   }
 }
+/*
 Output:
 
 The sum of the first 5 numbers is: 15
@@ -66,8 +69,8 @@ For eg: N=5
 
 Take a variable sum.
 Initialize it with N(N+1)/2, where N is a given number.
+*/
 
-Code:
 import java.util.*;
 
 public class tuf {
@@ -82,6 +85,7 @@ public class tuf {
     System.out.println("The sum of the first " + N + " numbers is: " + sum);
   }
 }
+/*
 Output:
 
 The sum of the first 5 numbers is: 15
@@ -120,7 +124,7 @@ main()
 
 }
 We can clearly see in this pseudocode that we first call the function when the value of sum is 0 and then we increment the value of sum by i (initially i is n) and decrement i by 1 inside the parameter of the function and make a call again. But, we know that this will go on forever as i will be decreasing continuously after every function call. So, to avoid this we put a base condition that if i is less than 1, then simply terminate the current recursive call and return the calculated sum.
-
+*/
 class Recursion {
     
     static void func(int i, int sum){
@@ -144,6 +148,7 @@ class Recursion {
        func(n,0);
     }
 }
+/*
 Output 
 
 6
@@ -178,6 +183,7 @@ main()
    func(n);
 
 }
+*/
 class Recursion {
     
     static int func(int n){
@@ -200,6 +206,7 @@ class Recursion {
        System.out.println(func(n));
     }
 }
+/*
 Output 
 
 6
@@ -207,3 +214,4 @@ Output
 Time Complexity: O(N) { Since the function is being called n times, and for each function, we have only one printable line that takes O(1) time, so the cumulative time complexity would be O(N) }
 
 Space Complexity: O(N) { In the worst case, the recursion stack space would be full with all the function calls waiting to get completed and that would make it an O(N) recursion stack space }.
+*/
