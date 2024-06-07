@@ -1,3 +1,4 @@
+/*
 Count frequency of each element in the array
 
 
@@ -40,7 +41,8 @@ Initialize the variable count to 1.
 Make that index true in the visited array.
 Run second loop, if we find the element then mark the visited index true and increase the count.
 If the visited index is already true then skip the other steps.
-Code:
+*/
+
 import java.util.*;
  
 public class tuf {
@@ -73,6 +75,7 @@ public static void countFreq(int arr[], int n)
     }
 }
 }
+/*
 Output:
 
 10 3
@@ -93,7 +96,8 @@ Take a unordered_map/HashMap of <Integer, Integer> pair.
 Use a for loop to iterate the array.
 If the element is not present in the map then insert it with frequency 1, otherwise increase the existing frequency by 1.
 Print the value frequency pair.
-Code:
+*/
+
 import java.util.*;
  
 public class tuf {
@@ -126,6 +130,7 @@ static void Frequency(int arr[], int n)
     }
 }
 }
+/*
 Output:
 
 5 2
@@ -135,3 +140,4 @@ Output:
 Time Complexity: O(N)
 
 Space Complexity: O(n)
+*/
