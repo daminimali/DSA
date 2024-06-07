@@ -1,3 +1,4 @@
+/*
 Hashing:
 Let’s first try to understand the importance of hashing using an example:
 
@@ -31,12 +32,8 @@ This step is named pre-storing as we are pre-calculating the information about t
 Step 2 - Fetching: In this step, we will select each query i.e. the number and for the query, we will just fetch the value of hash[number] and return it instead of running a ‘for loop’ every time. 
 
 The implementation is given below:
+*/
 
-Code:
-
-C++
-Java
-Copy
 import java.util.*;
 
 class tUf {
@@ -67,6 +64,7 @@ class tUf {
         }
     }
 }
+/*
 Input: 
 
 5
@@ -133,11 +131,8 @@ Note: The case 3 method also applies to case 1 and case 2. In character hashing,
 The implementation is given below:
 
 Code if the string contains only lowercase:
+*/
 
-Code:
-
-C++
-Java
 import java.util.*;
 
 class tUf {
@@ -164,6 +159,7 @@ class tUf {
         }
     }
 }
+/*
 Input: 
 
 abcdabehf
@@ -181,12 +177,9 @@ Output: 2
 1
 
 Code if the string contains both uppercase and lowercase:
+*/
 
-Code:
-
-C++
-Java
- import java.util.*;
+import java.util.*;
 
 class tUf {
 
@@ -212,6 +205,7 @@ class tUf {
         }
     }
 }
+/*
 Input:
 abcdabehf
 5
@@ -243,10 +237,8 @@ Key: In a map, a key refers to the element, for which we want to store informati
 Value: Value refers to the information stored corresponding to a key.
 
 In our example, we want to store the frequency(i.e. How many times an element appears in the array) of each element of the given array. So, here each element of the array will be the key of the map and frequencies will be the value corresponding to the keys. 
-Code:
+*/
 
-C++
-Java
 import java.util.*;
 
 class tUf {
@@ -289,6 +281,7 @@ class tUf {
         }
     }
 }
+/*
 Input: 
 7
 1 2 3 1 3 2 12
@@ -303,3 +296,4 @@ Output:
 1
 
 Note: We can similarly perform character hashing using the map data structure.
+*/
