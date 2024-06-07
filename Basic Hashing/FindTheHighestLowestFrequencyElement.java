@@ -1,3 +1,4 @@
+/*
 Problem Statement: Given an array of size N. Find the highest and lowest frequency element.
 
 Examples:
@@ -32,7 +33,8 @@ Make that index true in the visited array.
 Run the second loop, if we find the element then mark the visited index true and increase the count.
 If the visited index is already true then skip the other steps.
 After step 5, we will keep a track of the element with the highest frequency and the lowest frequency.
-Code:
+*/
+
 import java.util.*;
 
 public class tUf {
@@ -75,6 +77,7 @@ public class tUf {
 
     }
 }  
+/*
 Output:
 The highest frequency element is: 10
 The lowest frequency element is: 15
@@ -91,7 +94,8 @@ Take a unordered_map<int, int> / HashMap of <Integer, Integer> pair.
 Use a for loop to iterate the array.
 If the element is not present in the map then insert it with frequency 1, otherwise increase the existing frequency by 1.
 After visiting the whole array, we will find the element with the highest frequency and the element with the lowest frequency by iterating the map.
-Code:
+*/
+
 import java.util.*;
 
 public class Main {
@@ -133,9 +137,11 @@ public class Main {
         System.out.println("The highest frequency element is: " + maxEle);
         System.out.println("The lowest frequency element is: " + minEle);
     }
-} 
+}
+/*
 Output:
 The highest frequency element is: 10
 The lowest frequency element is: 15
 Time Complexity: O(N), where N = size of the array. The insertion and retrieval operation in the map takes O(1) time.
 Space Complexity:  O(N), where N = size of the array. It is for the map we are using.
+*/
